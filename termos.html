@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Termos de Uso — Numo</title>
+<meta name="description" content="Numo — aplicativo de organização financeira pessoal. Política de privacidade e termos de uso.">
+<style>
+:root {
+  --bg: #F4F8FF; --surface: #FFFFFF; --primary: #1E5BD6; --primary-dark: #0F3FA0;
+  --navy: #0F2A6B; --accent: #FFD23F; --accent-soft: #FFE89A; --accent-pale: #FFF8DC;
+  --success: #1FAB6B; --text: #0F1B33; --text-strong: #2D3954; --text-muted: #5A647A;
+  --text-faint: #9AA3B8; --border: #E1E8F5; --chip: #EAF1FB;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Plus Jakarta Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.55; font-size: 16px; -webkit-font-smoothing: antialiased; }
+.topbar { background: linear-gradient(135deg, #1E5BD6 0%, #0F3FA0 100%); color: #FFFFFF; padding: 14px 20px; }
+.topbar-inner { max-width: 720px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; }
+.brand-mark { width: 32px; height: 32px; border-radius: 8px; background: var(--accent); color: var(--primary-dark);
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; }
+.brand-name { font-weight: 800; letter-spacing: 0.2px; }
+.brand-sub { font-size: 12px; opacity: 0.75; margin-left: 6px; }
+.nav { display: flex; gap: 14px; flex-wrap: wrap; }
+.nav a { color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 600; opacity: 0.92; }
+.nav a:hover { opacity: 1; text-decoration: underline; }
+main { max-width: 720px; margin: 0 auto; padding: 28px 20px 60px; }
+.hero { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 28px 22px; margin-bottom: 22px; }
+.hero h1 { margin: 0 0 8px; font-size: 26px; font-weight: 800; color: var(--text); letter-spacing: -0.3px; }
+.hero p { margin: 0; color: var(--text-muted); font-size: 15px; }
+.hero .meta { display: inline-flex; align-items: center; background: var(--chip); color: var(--primary);
+  font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; margin-bottom: 14px; letter-spacing: 0.3px; }
+.card-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 18px 0; }
+@media (min-width: 560px) { .card-grid { grid-template-columns: 1fr 1fr; } }
+.doc-card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 20px; text-decoration: none; color: var(--text); transition: border-color 0.15s ease, transform 0.15s ease; }
+.doc-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+.doc-card .ic { width: 36px; height: 36px; background: var(--accent-pale); color: var(--primary-dark);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 12px; font-weight: 800; }
+.doc-card h3 { margin: 0 0 4px; font-size: 16px; font-weight: 800; }
+.doc-card p { margin: 0; font-size: 13px; color: var(--text-muted); }
+.contact { background: var(--accent-pale); border: 1px solid var(--accent-soft); border-radius: 14px; padding: 18px 20px; margin-top: 24px; }
+.contact strong { color: var(--text-strong); display: block; margin-bottom: 4px; font-size: 14px; }
+.contact a { color: var(--primary); font-weight: 700; text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.contact .sub { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+article h1 { font-size: 26px; font-weight: 800; margin: 0 0 8px; color: var(--text); letter-spacing: -0.3px; }
+article h2 { font-size: 18px; font-weight: 800; margin: 28px 0 10px; color: var(--text-strong); padding-top: 8px; }
+article h3 { font-size: 15px; font-weight: 700; margin: 18px 0 6px; color: var(--text-strong); }
+article p { margin: 0 0 12px; color: var(--text-strong); font-size: 14.5px; line-height: 1.65; }
+article ul, article ol { margin: 0 0 14px; padding-left: 22px; color: var(--text-strong); font-size: 14.5px; }
+article li { margin-bottom: 4px; }
+article strong { color: var(--text); }
+article hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+article a { color: var(--primary); }
+article blockquote { margin: 14px 0; padding: 12px 14px; background: var(--accent-pale); border-left: 3px solid var(--accent); border-radius: 6px; color: var(--text-strong); font-size: 13.5px; }
+article table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 13.5px; background: var(--surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+article th { background: var(--chip); color: var(--text-strong); font-weight: 700; text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); }
+article td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text-strong); }
+article tr:last-child td { border-bottom: none; }
+footer { max-width: 720px; margin: 0 auto; padding: 24px 20px 40px; color: var(--text-faint); font-size: 12px; text-align: center; }
+footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">N</span>
+      <span><span class="brand-name">Numo</span><span class="brand-sub">organização financeira</span></span>
+    </a>
+    <nav class="nav"><a href="index.html">Início</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
+  </div>
+</header>
+<main>
+<article><h1>Termos de Uso — Numo</h1>
+<p><strong>Versão:</strong> 3.0 — Novembro de 2026
+<strong>Última atualização:</strong> 13/11/2026
+<strong>Aplicação:</strong> Numo (Android e iOS), versão 1.0.0</p>
+<hr />
+<h2>1. Aceitação dos termos</h2>
+<p>Ao instalar, abrir ou usar o aplicativo Numo, você declara que leu, entendeu e concorda com estes Termos de Uso e com a Política de Privacidade. Se não concordar com qualquer cláusula, você não deve usar o aplicativo.</p>
+<p>A aceitação ocorre de forma expressa, durante o cadastro inicial, conforme exigido pelo Marco Civil da Internet (Lei 12.965/2014) e pela Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
+<hr />
+<h2>2. O que é o Numo</h2>
+<p>O Numo é um aplicativo de organização financeira pessoal voltado a quem quer entender, organizar e quitar dívidas. Utiliza inteligência artificial (Google Gemini) como assistente conversacional para sugestões e apoio.</p>
+<p><strong>O Numo é apenas uma ferramenta de organização pessoal.</strong></p>
+<p><strong>O Numo NÃO é:</strong>
+- Banco, instituição financeira ou cooperativa de crédito
+- Serviço de consultoria financeira regulamentado pela CVM
+- Intermediário de crédito, negociação ou cobrança
+- Birô de crédito (Serasa, SPC, Boa Vista)
+- Aconselhamento jurídico ou tributário</p>
+<hr />
+<h2>3. Quem pode usar</h2>
+<ul>
+<li>Pessoas físicas, maiores de 18 anos, residentes no Brasil</li>
+<li>Para uso pessoal e não comercial</li>
+</ul>
+<p>Empresas, menores de idade ou uso comercial não estão autorizados nesta versão beta.</p>
+<hr />
+<h2>4. Cadastro e conta</h2>
+<ul>
+<li>Você é responsável pelas informações que fornece no cadastro</li>
+<li>Você é responsável por manter a sua senha em segredo</li>
+<li>Uma conta por pessoa</li>
+<li>O Numo armazena a sua senha como hash; em caso de esquecimento, a recuperação é feita pela frase de recuperação que você gera no onboarding</li>
+</ul>
+<hr />
+<h2>5. Uso permitido</h2>
+<p>Você pode usar o Numo para:
+- Organizar as suas próprias dívidas e finanças pessoais
+- Consultar respostas e sugestões geradas pela IA (Numo AI)
+- Registrar pagamentos, contas fixas, metas, comprovantes
+- Exportar e fazer backup dos seus dados
+- Receber lembretes de vencimento</p>
+<hr />
+<h2>6. Uso proibido</h2>
+<p>Você não pode:
+- Usar o Numo para fins comerciais sem autorização expressa
+- Inserir dados de terceiros sem o consentimento deles
+- Tentar fazer engenharia reversa, descompilar ou explorar o código
+- Usar o app para fraude, lavagem de dinheiro ou qualquer atividade ilegal
+- Inserir conteúdo ofensivo, difamatório ou que viole direitos de terceiros nas conversas com a IA
+- Tentar acessar dados de outros usuários</p>
+<hr />
+<h2>7. Limitações da inteligência artificial</h2>
+<p>O agente Numo AI fornece <strong>orientações de caráter informativo e educacional</strong>, não aconselhamento financeiro profissional, jurídico ou contábil.</p>
+<p><strong>Você sempre deve:</strong>
+- Verificar as informações antes de tomar qualquer decisão
+- Consultar um profissional qualificado para decisões importantes (renegociação de dívidas, contratação de crédito, declaração de imposto, etc.)
+- Não confiar exclusivamente nas respostas da IA para questões legais, médicas ou de risco financeiro</p>
+<p><strong>O Numo não se responsabiliza por:</strong>
+- Decisões tomadas com base exclusiva nas respostas da IA
+- Eventuais imprecisões, atrasos ou indisponibilidade da API Gemini (serviço de terceiro)
+- Resultados financeiros decorrentes do uso do app</p>
+<hr />
+<h2>8. Responsabilidade pelo conteúdo</h2>
+<p>Você é integralmente responsável pelas informações que insere no app. O Numo não verifica a veracidade dos dados que você fornece e não se responsabiliza por decisões tomadas com base em informações incorretas ou desatualizadas que você mesmo registrou.</p>
+<hr />
+<h2>9. Disponibilidade do serviço</h2>
+<ul>
+<li>As funcionalidades locais do Numo operam <strong>offline</strong>.</li>
+<li>A função Numo AI exige conexão com a internet e dependência da API Google Gemini.</li>
+<li>O proxy intermediário (Cloudflare Workers) também precisa estar operacional.</li>
+<li><strong>Não garantimos disponibilidade ininterrupta</strong> dessas dependências externas.</li>
+<li>Podemos suspender ou alterar funcionalidades a qualquer momento durante a fase beta.</li>
+</ul>
+<hr />
+<h2>10. Versão beta</h2>
+<p>Esta é uma versão <strong>beta privada</strong> do aplicativo. Você reconhece e concorda que:</p>
+<ul>
+<li>Podem existir bugs, falhas e comportamentos inesperados</li>
+<li>Funcionalidades podem ser adicionadas, alteradas ou removidas sem aviso prévio</li>
+<li>Os dados locais podem ser afetados por atualizações (recomendamos backup frequente)</li>
+<li>O Numo <strong>não deve ser a única fonte</strong> de controle das suas finanças nesta fase</li>
+<li>Pode haver instabilidade nas atualizações entre versões</li>
+</ul>
+<hr />
+<h2>11. Propriedade intelectual</h2>
+<p>O nome "Numo", o avatar "Nono", o aplicativo, seu código-fonte, design, layout, marca, identidade visual e demais elementos são de propriedade do desenvolvedor.</p>
+<p>Você não pode:
+- Copiar, redistribuir, sublicenciar ou vender o app
+- Criar trabalhos derivados sem autorização expressa
+- Remover ou alterar avisos de direitos autorais</p>
+<hr />
+<h2>12. Limitação de responsabilidade</h2>
+<p>Dentro dos limites permitidos pela legislação brasileira, o desenvolvedor do Numo <strong>não será responsável</strong> por:</p>
+<ul>
+<li>Danos indiretos, lucros cessantes, perda de oportunidade ou danos morais decorrentes do uso ou impossibilidade de uso do app</li>
+<li>Falhas em serviços de terceiros (Google Gemini, Cloudflare, Sentry, PostHog, JotForm, Jooble) que afetem o funcionamento do app</li>
+<li>Perda de dados decorrente de falha do seu dispositivo, atualização do sistema operacional ou desinstalação do app</li>
+<li>Consequências financeiras de decisões tomadas com base nas sugestões da IA</li>
+</ul>
+<p>A responsabilidade total, em qualquer hipótese, fica limitada ao valor efetivamente pago pelo usuário pelo uso do app — que na versão beta é <strong>zero</strong>.</p>
+<hr />
+<h2>13. Indenização</h2>
+<p>Você concorda em indenizar e isentar o desenvolvedor do Numo de qualquer reclamação, processo, dano ou despesa decorrente do seu uso indevido do app, da inserção de dados de terceiros sem autorização ou do descumprimento destes Termos.</p>
+<hr />
+<h2>14. Cancelamento e encerramento</h2>
+<p><strong>Por você:</strong>
+- Você pode parar de usar o Numo a qualquer momento desinstalando o app — todos os dados locais serão removidos automaticamente pelo sistema operacional (Android ou iOS).
+- Para solicitar a eliminação de dados que possam estar com operadores (Sentry, PostHog), envie e-mail para <strong>matheusbf70@gmail.com</strong>.</p>
+<p><strong>Pelo desenvolvedor:</strong>
+- Podemos encerrar ou suspender o seu acesso, com ou sem aviso, em caso de violação destes Termos ou suspeita de uso fraudulento.
+- Podemos encerrar a fase beta a qualquer momento, com aviso prévio razoável (pelo menos 30 dias).</p>
+<hr />
+<h2>15. Comunicações</h2>
+<p>Comunicações entre você e o desenvolvedor podem ocorrer por:
+- E-mail cadastrado
+- Notificações dentro do app
+- Atualização desta página</p>
+<hr />
+<h2>16. Alterações nos termos</h2>
+<p>Estes termos podem ser atualizados. Em caso de mudanças relevantes:
+- Você será notificado na próxima abertura do app
+- A versão e a data no topo deste documento serão atualizadas
+- O uso continuado do app após a notificação implica aceitação da nova versão</p>
+<hr />
+<h2>17. Legislação aplicável e foro</h2>
+<p>Estes Termos são regidos pelas leis da República Federativa do Brasil, em especial:
+- Marco Civil da Internet (Lei 12.965/2014)
+- Código de Defesa do Consumidor (Lei 8.078/1990), quando aplicável
+- Lei Geral de Proteção de Dados (Lei 13.709/2018)</p>
+<p>Fica eleito o foro da <strong>Comarca do domicílio do usuário</strong>, na hipótese de relação de consumo, ou o foro da Comarca de <strong>São Paulo/SP</strong>, para os demais casos, como competente para dirimir quaisquer controvérsias decorrentes destes Termos, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+<hr />
+<h2>18. Contato</h2>
+<p><strong>E-mail:</strong> matheusbf70@gmail.com
+<strong>Tempo de resposta:</strong> até 5 dias úteis para suporte; até 15 dias para questões legais</p></article>
+</main>
+<footer>
+  Numo — beta privada · matheusbf70@gmail.com · Atualizado em 13/11/2026
+</footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Início — Numo</title>
+<meta name="description" content="Numo — aplicativo de organização financeira pessoal. Política de privacidade e termos de uso.">
+<style>
+:root {
+  --bg: #F4F8FF; --surface: #FFFFFF; --primary: #1E5BD6; --primary-dark: #0F3FA0;
+  --navy: #0F2A6B; --accent: #FFD23F; --accent-soft: #FFE89A; --accent-pale: #FFF8DC;
+  --success: #1FAB6B; --text: #0F1B33; --text-strong: #2D3954; --text-muted: #5A647A;
+  --text-faint: #9AA3B8; --border: #E1E8F5; --chip: #EAF1FB;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Plus Jakarta Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.55; font-size: 16px; -webkit-font-smoothing: antialiased; }
+.topbar { background: linear-gradient(135deg, #1E5BD6 0%, #0F3FA0 100%); color: #FFFFFF; padding: 14px 20px; }
+.topbar-inner { max-width: 720px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; }
+.brand-mark { width: 32px; height: 32px; border-radius: 8px; background: var(--accent); color: var(--primary-dark);
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; }
+.brand-name { font-weight: 800; letter-spacing: 0.2px; }
+.brand-sub { font-size: 12px; opacity: 0.75; margin-left: 6px; }
+.nav { display: flex; gap: 14px; flex-wrap: wrap; }
+.nav a { color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 600; opacity: 0.92; }
+.nav a:hover { opacity: 1; text-decoration: underline; }
+main { max-width: 720px; margin: 0 auto; padding: 28px 20px 60px; }
+.hero { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 28px 22px; margin-bottom: 22px; }
+.hero h1 { margin: 0 0 8px; font-size: 26px; font-weight: 800; color: var(--text); letter-spacing: -0.3px; }
+.hero p { margin: 0; color: var(--text-muted); font-size: 15px; }
+.hero .meta { display: inline-flex; align-items: center; background: var(--chip); color: var(--primary);
+  font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; margin-bottom: 14px; letter-spacing: 0.3px; }
+.card-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 18px 0; }
+@media (min-width: 560px) { .card-grid { grid-template-columns: 1fr 1fr; } }
+.doc-card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 20px; text-decoration: none; color: var(--text); transition: border-color 0.15s ease, transform 0.15s ease; }
+.doc-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+.doc-card .ic { width: 36px; height: 36px; background: var(--accent-pale); color: var(--primary-dark);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 12px; font-weight: 800; }
+.doc-card h3 { margin: 0 0 4px; font-size: 16px; font-weight: 800; }
+.doc-card p { margin: 0; font-size: 13px; color: var(--text-muted); }
+.contact { background: var(--accent-pale); border: 1px solid var(--accent-soft); border-radius: 14px; padding: 18px 20px; margin-top: 24px; }
+.contact strong { color: var(--text-strong); display: block; margin-bottom: 4px; font-size: 14px; }
+.contact a { color: var(--primary); font-weight: 700; text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.contact .sub { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+article h1 { font-size: 26px; font-weight: 800; margin: 0 0 8px; color: var(--text); letter-spacing: -0.3px; }
+article h2 { font-size: 18px; font-weight: 800; margin: 28px 0 10px; color: var(--text-strong); padding-top: 8px; }
+article h3 { font-size: 15px; font-weight: 700; margin: 18px 0 6px; color: var(--text-strong); }
+article p { margin: 0 0 12px; color: var(--text-strong); font-size: 14.5px; line-height: 1.65; }
+article ul, article ol { margin: 0 0 14px; padding-left: 22px; color: var(--text-strong); font-size: 14.5px; }
+article li { margin-bottom: 4px; }
+article strong { color: var(--text); }
+article hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+article a { color: var(--primary); }
+article blockquote { margin: 14px 0; padding: 12px 14px; background: var(--accent-pale); border-left: 3px solid var(--accent); border-radius: 6px; color: var(--text-strong); font-size: 13.5px; }
+article table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 13.5px; background: var(--surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+article th { background: var(--chip); color: var(--text-strong); font-weight: 700; text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); }
+article td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text-strong); }
+article tr:last-child td { border-bottom: none; }
+footer { max-width: 720px; margin: 0 auto; padding: 24px 20px 40px; color: var(--text-faint); font-size: 12px; text-align: center; }
+footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">N</span>
+      <span><span class="brand-name">Numo</span><span class="brand-sub">organização financeira</span></span>
+    </a>
+    <nav class="nav"><a href="index.html">Início</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <span class="meta">BETA PRIVADA · v1.0.0 · Android e iOS</span>
+  <h1>Numo — Organização financeira pessoal</h1>
+  <p>O Numo ajuda você a se organizar e sair das dívidas, no seu ritmo. Os seus dados financeiros ficam no seu celular. Esta página reúne a política de privacidade e os termos de uso do aplicativo.</p>
+</section>
+
+<section class="card-grid">
+  <a class="doc-card" href="privacidade.html">
+    <div class="ic">P</div>
+    <h3>Política de Privacidade</h3>
+    <p>Como coletamos, usamos e protegemos os seus dados, em conformidade com a LGPD.</p>
+  </a>
+  <a class="doc-card" href="termos.html">
+    <div class="ic">T</div>
+    <h3>Termos de Uso</h3>
+    <p>Regras de uso do aplicativo, limitações e responsabilidades.</p>
+  </a>
+</section>
+
+<section class="contact">
+  <strong>Dúvidas, solicitações ou reclamações?</strong>
+  <a href="mailto:matheusbf70@gmail.com">matheusbf70@gmail.com</a>
+  <div class="sub">Tempo de resposta: até 15 dias úteis para questões de privacidade.</div>
+</section>
+
+</main>
+<footer>
+  Numo — beta privada · matheusbf70@gmail.com · Atualizado em 13/11/2026
+</footer>
+</body>
+</html>

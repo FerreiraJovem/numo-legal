@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Política de Privacidade — Numo</title>
+<meta name="description" content="Numo — aplicativo de organização financeira pessoal. Política de privacidade e termos de uso.">
+<style>
+:root {
+  --bg: #F4F8FF; --surface: #FFFFFF; --primary: #1E5BD6; --primary-dark: #0F3FA0;
+  --navy: #0F2A6B; --accent: #FFD23F; --accent-soft: #FFE89A; --accent-pale: #FFF8DC;
+  --success: #1FAB6B; --text: #0F1B33; --text-strong: #2D3954; --text-muted: #5A647A;
+  --text-faint: #9AA3B8; --border: #E1E8F5; --chip: #EAF1FB;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Plus Jakarta Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.55; font-size: 16px; -webkit-font-smoothing: antialiased; }
+.topbar { background: linear-gradient(135deg, #1E5BD6 0%, #0F3FA0 100%); color: #FFFFFF; padding: 14px 20px; }
+.topbar-inner { max-width: 720px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #FFFFFF; }
+.brand-mark { width: 32px; height: 32px; border-radius: 8px; background: var(--accent); color: var(--primary-dark);
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; }
+.brand-name { font-weight: 800; letter-spacing: 0.2px; }
+.brand-sub { font-size: 12px; opacity: 0.75; margin-left: 6px; }
+.nav { display: flex; gap: 14px; flex-wrap: wrap; }
+.nav a { color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 600; opacity: 0.92; }
+.nav a:hover { opacity: 1; text-decoration: underline; }
+main { max-width: 720px; margin: 0 auto; padding: 28px 20px 60px; }
+.hero { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 28px 22px; margin-bottom: 22px; }
+.hero h1 { margin: 0 0 8px; font-size: 26px; font-weight: 800; color: var(--text); letter-spacing: -0.3px; }
+.hero p { margin: 0; color: var(--text-muted); font-size: 15px; }
+.hero .meta { display: inline-flex; align-items: center; background: var(--chip); color: var(--primary);
+  font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; margin-bottom: 14px; letter-spacing: 0.3px; }
+.card-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 18px 0; }
+@media (min-width: 560px) { .card-grid { grid-template-columns: 1fr 1fr; } }
+.doc-card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 20px; text-decoration: none; color: var(--text); transition: border-color 0.15s ease, transform 0.15s ease; }
+.doc-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+.doc-card .ic { width: 36px; height: 36px; background: var(--accent-pale); color: var(--primary-dark);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 12px; font-weight: 800; }
+.doc-card h3 { margin: 0 0 4px; font-size: 16px; font-weight: 800; }
+.doc-card p { margin: 0; font-size: 13px; color: var(--text-muted); }
+.contact { background: var(--accent-pale); border: 1px solid var(--accent-soft); border-radius: 14px; padding: 18px 20px; margin-top: 24px; }
+.contact strong { color: var(--text-strong); display: block; margin-bottom: 4px; font-size: 14px; }
+.contact a { color: var(--primary); font-weight: 700; text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.contact .sub { font-size: 12px; color: var(--text-muted); margin-top: 6px; }
+article h1 { font-size: 26px; font-weight: 800; margin: 0 0 8px; color: var(--text); letter-spacing: -0.3px; }
+article h2 { font-size: 18px; font-weight: 800; margin: 28px 0 10px; color: var(--text-strong); padding-top: 8px; }
+article h3 { font-size: 15px; font-weight: 700; margin: 18px 0 6px; color: var(--text-strong); }
+article p { margin: 0 0 12px; color: var(--text-strong); font-size: 14.5px; line-height: 1.65; }
+article ul, article ol { margin: 0 0 14px; padding-left: 22px; color: var(--text-strong); font-size: 14.5px; }
+article li { margin-bottom: 4px; }
+article strong { color: var(--text); }
+article hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+article a { color: var(--primary); }
+article blockquote { margin: 14px 0; padding: 12px 14px; background: var(--accent-pale); border-left: 3px solid var(--accent); border-radius: 6px; color: var(--text-strong); font-size: 13.5px; }
+article table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 13.5px; background: var(--surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+article th { background: var(--chip); color: var(--text-strong); font-weight: 700; text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); }
+article td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text-strong); }
+article tr:last-child td { border-bottom: none; }
+footer { max-width: 720px; margin: 0 auto; padding: 24px 20px 40px; color: var(--text-faint); font-size: 12px; text-align: center; }
+footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">N</span>
+      <span><span class="brand-name">Numo</span><span class="brand-sub">organização financeira</span></span>
+    </a>
+    <nav class="nav"><a href="index.html">Início</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav>
+  </div>
+</header>
+<main>
+<article><h1>Política de Privacidade — Numo</h1>
+<p><strong>Versão:</strong> 3.0 — Novembro de 2026
+<strong>Última atualização:</strong> 13/11/2026
+<strong>Aplicação:</strong> Numo (Android e iOS), versão 1.0.0</p>
+<hr />
+<h2>1. Quem somos</h2>
+<p>O Numo é um aplicativo de organização financeira pessoal voltado a pessoas que querem se organizar e sair das dívidas. O app foi desenvolvido e é mantido por uma pessoa física, em fase beta privada.</p>
+<p><strong>Controlador dos dados (LGPD, Art. 5º, VI):</strong>
+Matheus Bernardo Ferreira — pessoa física
+E-mail: matheusbf70@gmail.com</p>
+<p><strong>Encarregado pelo Tratamento de Dados (DPO — LGPD, Art. 41):</strong>
+Matheus Bernardo Ferreira
+E-mail: matheusbf70@gmail.com</p>
+<hr />
+<h2>2. A quem este aviso se destina</h2>
+<p>O Numo é destinado a maiores de 18 anos residentes no Brasil. Não tratamos dados de crianças e adolescentes intencionalmente. Se você é responsável por um menor que instalou o app, entre em contato pelo e-mail acima para que possamos remover os dados.</p>
+<hr />
+<h2>3. Princípio fundamental — Onde os seus dados ficam</h2>
+<p>A maior parte dos seus dados financeiros fica <strong>somente no seu celular</strong>, em um banco de dados local (SQLite). Não temos servidores próprios armazenando seus dados financeiros.</p>
+<p>Existem <strong>exceções pontuais e necessárias</strong> para o funcionamento do app, listadas na seção 5.</p>
+<hr />
+<h2>4. Quais dados coletamos</h2>
+<h3>4.1 Dados que você fornece diretamente no app</h3>
+<ul>
+<li><strong>Dados de cadastro:</strong> nome, e-mail, telefone (opcional), cidade, faixa etária</li>
+<li><strong>Dados financeiros:</strong> renda mensal, dia de recebimento, categoria de renda, contas fixas, lista de dívidas (nome, valor, parcela, vencimento, credor), transações registradas, metas</li>
+<li><strong>Dados de uso do app:</strong> humor diário (check-in 1–5), conversas com o agente Numo AI, pontuação interna (Índice de Confiança), missões concluídas</li>
+<li><strong>Comprovantes de pagamento:</strong> fotos enviadas para análise da IA</li>
+<li><strong>Credenciais:</strong> senha (armazenada como hash SHA-256 com salt aleatório — nunca em texto puro) e frase de recuperação (também armazenada como hash)</li>
+</ul>
+<h3>4.2 Dados coletados automaticamente</h3>
+<ul>
+<li><strong>Identificador anônimo do dispositivo:</strong> um UUID gerado localmente (<code>Crypto.randomUUID</code>) e armazenado no AsyncStorage, usado para análise anônima de uso (PostHog).</li>
+<li><strong>Dados de falha do app:</strong> logs de crash, stack traces, modelo do dispositivo, versão do SO e do app — coletados pelo Sentry quando o app trava ou apresenta erro. Filtramos automaticamente o conteúdo das suas mensagens e dados sensíveis antes do envio.</li>
+<li><strong>Eventos de uso anônimos:</strong> 11 eventos rastreados pelo PostHog (por exemplo: abertura do app, conclusão do onboarding, registro de pagamento). <strong>Nunca</strong> enviamos seu nome, valor de dívida ou conteúdo de mensagens. Apenas o evento e timestamp.</li>
+</ul>
+<blockquote>
+<p>Versão 1.0 desta política dizia que não coletávamos analytics — isso estava incorreto. A versão 2.0 corrigiu essa declaração. A versão 3.0 estende a política para cobrir também a versão iOS do app e detalha as fontes públicas de dados (IBGE e Banco Central) usadas sem envio de dados pessoais.</p>
+</blockquote>
+<hr />
+<h2>5. Compartilhamento com terceiros (Operadores)</h2>
+<p>Para que o Numo funcione, dados específicos são compartilhados com os seguintes operadores (LGPD, Art. 5º, VII). Nenhum deles vende seus dados para terceiros.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>O que recebe</th>
+<th>Para quê</th>
+<th>Localização</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google (Gemini API)</strong></td>
+<td>Texto das mensagens enviadas ao Numo AI; imagens de comprovantes</td>
+<td>Gerar respostas da IA e analisar comprovantes de pagamento</td>
+<td>Estados Unidos</td>
+</tr>
+<tr>
+<td><strong>Cloudflare Workers</strong></td>
+<td>Mesmas mensagens acima, intermediadas antes de chegar à Google</td>
+<td>Proxy que protege a chave da API Gemini; não armazena conteúdo</td>
+<td>Servidores globais (Anycast)</td>
+</tr>
+<tr>
+<td><strong>Sentry (Functional Software Inc.)</strong></td>
+<td>Logs de erro, stack traces, modelo do aparelho, versão do app</td>
+<td>Crash reporting para corrigir bugs</td>
+<td>Estados Unidos</td>
+</tr>
+<tr>
+<td><strong>PostHog (PostHog Inc.)</strong></td>
+<td>UUID anônimo do dispositivo + 11 eventos de uso (sem dados pessoais ou financeiros)</td>
+<td>Entender como o app é usado e priorizar melhorias</td>
+<td>Estados Unidos</td>
+</tr>
+<tr>
+<td><strong>JotForm (Jotform Inc.)</strong></td>
+<td>Dados que você decidir enviar pelo formulário de feedback do beta</td>
+<td>Coletar feedback de usuários beta</td>
+<td>Estados Unidos</td>
+</tr>
+<tr>
+<td><strong>Jooble (Jooble Int. UAB)</strong></td>
+<td>Sua cidade e palavras-chave da busca de vagas</td>
+<td>Buscar vagas de emprego próximas</td>
+<td>União Europeia / Servidores globais</td>
+</tr>
+</tbody>
+</table>
+<p>Além disso, o app consulta duas fontes públicas de dados <strong>sem enviar nenhuma informação sua</strong>: a API do IBGE (lista de cidades brasileiras, para autocompletar o campo de cidade) e a API do Banco Central do Brasil — BACEN/SGS (taxas médias de juros, para manter o simulador de dívida atualizado). Ambas são consultas anônimas e genéricas — nenhum dado pessoal é enviado a elas.</p>
+<p><strong>Não compartilhamos com:</strong> bancos, instituições financeiras, agências de crédito, empresas de cobrança, anunciantes, redes sociais, corretores de dados ou qualquer terceiro com finalidade comercial.</p>
+<hr />
+<h2>6. Base legal do tratamento (LGPD, Art. 7º)</h2>
+<table>
+<thead>
+<tr>
+<th>Categoria de dado</th>
+<th>Base legal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cadastro e dados financeiros</td>
+<td>Execução de contrato (Art. 7º, V) — você fornece para receber o serviço</td>
+</tr>
+<tr>
+<td>Conversas com Numo AI e análise de comprovantes</td>
+<td>Consentimento (Art. 7º, I) — você aceita ao usar a função</td>
+</tr>
+<tr>
+<td>UUID anônimo + eventos PostHog</td>
+<td>Legítimo interesse (Art. 7º, IX) — melhoria do serviço</td>
+</tr>
+<tr>
+<td>Logs de erro Sentry</td>
+<td>Legítimo interesse (Art. 7º, IX) — manter o app funcionando</td>
+</tr>
+<tr>
+<td>Captura de notificações de banco</td>
+<td>Consentimento explícito (Art. 7º, I) — você ativa a permissão manualmente</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. Permissões do aplicativo</h2>
+<table>
+<thead>
+<tr>
+<th>Permissão</th>
+<th>Finalidade</th>
+<th>Quando é pedida</th>
+<th>Plataforma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Câmera</td>
+<td>Fotografar comprovantes de pagamento</td>
+<td>Ao tirar a primeira foto</td>
+<td>Android e iOS</td>
+</tr>
+<tr>
+<td>Galeria/Mídia</td>
+<td>Selecionar comprovantes salvos</td>
+<td>Ao escolher imagem</td>
+<td>Android e iOS</td>
+</tr>
+<tr>
+<td>Notificações</td>
+<td>Enviar lembretes de vencimento</td>
+<td>No primeiro lembrete</td>
+<td>Android e iOS</td>
+</tr>
+<tr>
+<td>Localização aproximada</td>
+<td>Sugerir sua cidade no cadastro (opcional)</td>
+<td>No onboarding, opcional</td>
+<td>Android e iOS</td>
+</tr>
+<tr>
+<td>Biometria (digital/Face ID)</td>
+<td>Desbloquear o app</td>
+<td>Ao ativar bloqueio</td>
+<td>Android e iOS</td>
+</tr>
+<tr>
+<td>Acesso a notificações (BIND_NOTIFICATION_LISTENER_SERVICE)</td>
+<td>Capturar notificações de bancos para sugerir registro de gastos</td>
+<td>Apenas se você ativar manualmente em Configurações</td>
+<td><strong>Somente Android</strong> — o iOS não permite esse tipo de acesso a apps de terceiros</td>
+</tr>
+</tbody>
+</table>
+<p>Você pode revogar qualquer permissão a qualquer momento pelas configurações do seu aparelho. Algumas funcionalidades deixarão de operar quando a permissão correspondente for desativada.</p>
+<hr />
+<h2>8. Captura de notificações de aplicativos bancários (detalhamento)</h2>
+<p><strong>Disponível apenas na versão Android.</strong> O iOS não permite que apps de terceiros leiam notificações de outros aplicativos — por isso esse recurso não existe na versão iOS do Numo.</p>
+<p>Esta é a permissão mais sensível do app e merece destaque.</p>
+<p><strong>Como funciona:</strong>
+- Você precisa ativar manualmente em <strong>Configurações do Android → Notificações → Acesso a notificações</strong>.
+- Quando ativada, o Numo lê o texto de notificações de aplicativos bancários (Nubank, Itaú, Bradesco, PIX, etc.) e identifica valores e estabelecimentos.
+- O processamento é feito <strong>localmente no seu celular</strong>. O conteúdo das notificações não é enviado para servidores nossos nem para terceiros.
+- A leitura é usada apenas para <strong>pré-preencher</strong> a tela de registro de gastos. Você sempre confirma antes de salvar.</p>
+<p><strong>O que não fazemos:</strong>
+- Não lemos notificações de outros tipos de app (mensagens, redes sociais, e-mails).
+- Não enviamos o conteúdo das notificações para a internet.
+- Não compartilhamos com terceiros.</p>
+<hr />
+<h2>9. Transferência internacional de dados (LGPD, Art. 33)</h2>
+<p>Alguns dos operadores listados na seção 5 estão fora do Brasil (principalmente nos Estados Unidos). A transferência ocorre com base nas seguintes garantias:</p>
+<ul>
+<li>Os países de destino contam com legislação de proteção de dados reconhecida (GDPR na União Europeia; CCPA no estado da Califórnia).</li>
+<li>Os operadores são empresas estabelecidas, com contratos de tratamento de dados que incluem cláusulas-padrão de proteção.</li>
+<li>A transferência é necessária para a execução do serviço (Art. 33, II) ou ocorre com seu consentimento específico (Art. 33, VIII).</li>
+</ul>
+<hr />
+<h2>10. Como usamos os seus dados</h2>
+<ul>
+<li>Calcular o seu score interno e o Índice de Confiança Financeira</li>
+<li>Organizar sua lista de dívidas e contas a pagar</li>
+<li>Gerar respostas personalizadas no chat com o Numo AI</li>
+<li>Enviar lembretes locais de vencimento de contas</li>
+<li>Sugerir vagas de emprego próximas à sua cidade</li>
+<li>Personalizar saudações e dicas conforme o contexto</li>
+</ul>
+<p><strong>Nunca usamos os seus dados para:</strong>
+- Publicidade ou perfis comerciais
+- Venda para terceiros
+- Análise de crédito ou consulta a birôs
+- Compartilhamento com bancos ou financeiras</p>
+<hr />
+<h2>11. Segurança</h2>
+<ul>
+<li>Senha e frase de recuperação armazenadas como hash criptográfico (SHA-256 com salt aleatório por usuário) — nunca em texto puro</li>
+<li>Comunicação com a API Gemini intermediada por proxy Cloudflare, com chave protegida nos Secrets do Cloudflare</li>
+<li>Dados locais protegidos pelo isolamento de aplicativos do Android</li>
+<li>Bloqueio opcional do app por biometria ou senha</li>
+<li>Erros enviados ao Sentry passam por filtro que remove dados de requisição e estado da aplicação</li>
+</ul>
+<p>Apesar de adotarmos práticas razoáveis de segurança, nenhum sistema é 100% seguro. Em caso de incidente de segurança que afete seus dados, você será comunicado conforme exigido pelo Art. 48 da LGPD.</p>
+<hr />
+<h2>12. Retenção de dados</h2>
+<ul>
+<li><strong>Dados no seu celular:</strong> permanecem enquanto o app estiver instalado. Ao desinstalar, o Android remove tudo automaticamente.</li>
+<li><strong>Logs de erro (Sentry):</strong> retidos por 90 dias.</li>
+<li><strong>Eventos anônimos (PostHog):</strong> retidos por 12 meses.</li>
+<li><strong>Mensagens enviadas ao Gemini:</strong> processadas em tempo real; consulte a <a href="https://policies.google.com/privacy">política da Google</a> para a política de retenção da própria Google.</li>
+<li><strong>Conteúdo do JotForm:</strong> retido enquanto o formulário estiver ativo; você pode solicitar remoção a qualquer momento.</li>
+</ul>
+<hr />
+<h2>13. Os seus direitos (LGPD, Art. 18)</h2>
+<p>Você pode, a qualquer momento e gratuitamente, solicitar:</p>
+<ol>
+<li><strong>Confirmação</strong> da existência de tratamento dos seus dados</li>
+<li><strong>Acesso</strong> aos seus dados</li>
+<li><strong>Correção</strong> de dados incompletos, inexatos ou desatualizados</li>
+<li><strong>Anonimização, bloqueio ou eliminação</strong> de dados desnecessários ou tratados em desconformidade com a LGPD</li>
+<li><strong>Portabilidade</strong> dos dados a outro fornecedor (mediante requisição expressa)</li>
+<li><strong>Eliminação</strong> dos dados tratados com base no seu consentimento</li>
+<li><strong>Informação</strong> sobre com quem compartilhamos os seus dados</li>
+<li><strong>Informação</strong> sobre a possibilidade de não fornecer o consentimento e as consequências</li>
+<li><strong>Revogação do consentimento</strong> a qualquer momento</li>
+</ol>
+<p><strong>Como exercer esses direitos:</strong>
+- Diretamente no app, pelo menu <strong>Eu → Meus dados</strong> (acesso e correção) e <strong>Eu → Backup dos dados</strong> (exportar)
+- Por e-mail: <strong>matheusbf70@gmail.com</strong> com o assunto "Solicitação LGPD"
+- Tempo de resposta: até 15 dias</p>
+<hr />
+<h2>14. Reclamações à ANPD</h2>
+<p>Caso você entenda que os seus direitos não foram atendidos, pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD): https://www.gov.br/anpd/</p>
+<hr />
+<h2>15. Cookies e tecnologias similares</h2>
+<p>O Numo é um aplicativo mobile (Android e iOS) e <strong>não utiliza cookies</strong>. Este site público apresenta apenas informações estáticas e não rastreia o seu acesso.</p>
+<hr />
+<h2>16. Alterações nesta política</h2>
+<p>Esta política pode ser atualizada. Alterações relevantes serão comunicadas por:
+- Notificação na próxima abertura do app
+- Atualização da versão e data no topo deste documento</p>
+<p>O histórico de versões está disponível mediante solicitação por e-mail.</p>
+<hr />
+<h2>17. Contato</h2>
+<p><strong>E-mail:</strong> matheusbf70@gmail.com
+<strong>Assunto sugerido:</strong> "Privacidade Numo" ou "Solicitação LGPD"
+<strong>Tempo de resposta:</strong> até 15 dias úteis</p></article>
+</main>
+<footer>
+  Numo — beta privada · matheusbf70@gmail.com · Atualizado em 13/11/2026
+</footer>
+</body>
+</html>
